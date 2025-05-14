@@ -11,7 +11,7 @@ public class Task2 {
         String ipAddress = "";
         try {
             driver.get("https://api.ipify.org/?format=json");
-            String jsonResponse = "";
+            String jsonResponse;
             try {
                 WebElement preElem = driver.findElement(By.tagName("pre"));
                 jsonResponse = preElem.getText();
